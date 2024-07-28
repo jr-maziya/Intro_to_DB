@@ -10,7 +10,7 @@ try:
 
     print("Connection to database successful")
 
-except:
+except mysql.connector.Error:
     print("Connection to database failed")
 
 cursor = mydb.cursor()
